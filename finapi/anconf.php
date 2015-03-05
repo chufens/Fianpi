@@ -20,6 +20,7 @@ if(empty($_SESSION["usuario"]))
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>FiNaPi - Exportación a NConf</title>
 <link rel="stylesheet" type="text/css" href="includes/css/fing.css" />
+<link rel="shortcut icon" href="../favicon.ico">
 <script type="text/javascript" src="includes/js/fing.js" ></script>
 <script type="text/javascript" src="includes/js/jquery.min.js"></script>
 <script type="text/javascript">

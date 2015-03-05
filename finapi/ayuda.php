@@ -7,6 +7,7 @@
 <script type="text/javascript" src="includes/js/lightbox.min.js"></script>
 <link rel="stylesheet" type="text/css" href="includes/css/fing.css"/>
 <link rel="stylesheet" type="text/css" href="includes/css/lightbox.css"/>
+<link rel="shortcut icon" href="../favicon.ico">
 </head>
 <?php
 if (isset($_GET["opt"]))

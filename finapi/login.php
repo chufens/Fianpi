@@ -16,6 +16,7 @@ if (isset($_GET["funcion"]))
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>FiNaPi - Login de Acceso</title>
 <link rel="stylesheet" type="text/css" href="includes/css/fing.css"/>
+<link rel="shortcut icon" href="../favicon.ico">
 </head>
 <?php
 $usuario_ok = "finapi";
