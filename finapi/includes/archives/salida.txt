@@ -1,0 +1,7 @@
+192.168.2.1;;up;;;E0:CB:4E:27:11:55;ASUSTek COMPUTER
+192.168.2.10;;up;;Comtrend.Home;F8:8E:85:D3:17:D1;
+192.168.2.11;;up;;;B8:27:EB:0F:1F:E3;Raspberry Pi Foundation
+192.168.2.20;;up;;;BC:F2:AF:9D:33:9F;devolo
+192.168.2.102;;up;;OPOChufens;C0:EE:FB:20:FB:ED;
+192.168.2.103;;up;;android-4ba92692ad22891d;78:1F:DB:E4:D3:92;
+192.168.2.252;;up;;;00:13:57:68:30:57;Soyal Technology

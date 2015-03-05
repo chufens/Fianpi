@@ -1,0 +1,40 @@
+@charset "utf-8";
+/* CSS Document */
+#contenedorweb {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.texto {
+	font-family: "Courier New", Courier, monospace;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: normal;
+}
+a:link {
+	font-family:  "Courier New", Courier, monospace;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: normal;
+	color: #00C;
+	text-decoration:none;   
+}
+.Titulo {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 30px;
+	font-style: normal;
+	font-weight: bold;
+}
+.Titulo2 {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: bold;
+}
+.Titulo3 {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: bold;
+}
+
