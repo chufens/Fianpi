@@ -1,8 +1,2 @@
 host_name;alias;address;os;check_period;notification_period;contact_groups;parents;host-preset;monitored_by
-host1;"ASUSTek COMPUTER";192.168.2.1;;24x7;24x7;;;;"Default Nagios"
-Comtrend.Home;;192.168.2.10;;24x7;24x7;;;;"Default Nagios"
-host3;"Raspberry Pi Foundation";192.168.2.11;;24x7;24x7;;;;"Default Nagios"
-host4;devolo;192.168.2.20;;24x7;24x7;;;;"Default Nagios"
-OPOChufens;;192.168.2.102;;24x7;24x7;;;;"Default Nagios"
-android-4ba92692ad22891d;;192.168.2.103;;24x7;24x7;;;;"Default Nagios"
-host7;"Soyal Technology";192.168.2.252;;24x7;24x7;;;;"Default Nagios"
+;;;;24x7;24x7;;;;"Default Nagios"

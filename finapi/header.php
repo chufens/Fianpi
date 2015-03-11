@@ -29,13 +29,12 @@
 			</li>
   			<li class="nivel1"><a href="ayuda.php" title="Ayuda" target="_self" class="nivel1">Ayuda</a></li>
             <li class="nivel1"><?php
-			if (isset($result))
+			if (!empty($_SESSION["usuario"]))
 			{
 				echo "<a href='login.php?funcion=cerrarSesion' title='Cerrar Sesión' class='nivel1'><img src='includes/images/shut_down.png' alt='Cerrar Sesión' name='cerrarsesion' width='20' height='20' id='cerrarsesion' /></a>\n";
 			}
 			else
 			{
-				//echo "<img src='includes/images/blanco.png' width='20' height='20'/>";
 				echo "<a href='login.php' target='_self' title='Login' class='nivel1'><img src='includes/images/login.png' alt='Iniciar Sesión' name='login' width='20' height='20' id='login' /></a>\n";
 			}
 		?></li>

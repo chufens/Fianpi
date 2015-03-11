@@ -29,9 +29,46 @@ $(document).ready(function(){
 
 <body id="contenedorweb" class="texto">
 <div id="wrapper">
-<?php
-include 'header.php';
-?>
+<div>
+<table width="100%" border="0" cellspacing="0px">
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><img src="includes/images/finapi.png" width="265" height="80" alt="FiNaPi" /></td>
+    <td align="right">
+    <div id="menu">
+		<ul>
+  			<li class="nivel1"><a href="finapi.php" title="Inicio" target="_self" class="nivel1">Inicio</a></li>
+			<li class="nivel1"><a href="rastreo.php" title="Rastreo" target="_self" class="nivel1">Rastreo</a></li>
+			<li class="nivel1"><a href="#" title="Monitorización" class="nivel1">Monitorización</a>
+<!--[if lte IE 6]><a href="#" class="nivel1ie">Opción 3<table class="falsa"><tr><td><![endif]-->
+				<ul>
+					<li><a href="/nconf" title="NConf">NConf</a></li>
+					<li><a href="/nagios" title="Nagios">Nagios</a></li>
+					<li><a href="/nagvis" title="NagVis">NagVis</a></li>
+				</ul>
+<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+			</li>
+			<li class="nivel1"><a href="#" class="nivel1">Administración</a>
+<!--[if lte IE 6]><a href="#" class="nivel1ie">Opción 4<table class="falsa"><tr><td><![endif]-->
+				<ul>
+					<li><a href="/phpmyadmin" title="PhpmyAdmin">Phpmyadmin</a></li>
+					<li><a href="/raspcontrol" title="Raspcontrol">RaspControl</a></li>
+				</ul>
+<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+			</li>
+  			<li class="nivel1"><a href="ayuda.php" title="Ayuda" target="_self" class="nivel1">Ayuda</a></li>
+            <li class="nivel1"><a href="login.php" title="Cerrar Sesión" target="_self" class="nivel1"><img src='includes/images/shut_down.png' alt='Cerrar Sesión' name='cerrarsesion' width='20' height='20' id='cerrarsesion' /></a></li>
+		</ul>
+    </div>
+    </td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+</div>
 </div>
 <div id="layer">
 	<div id="layerc">

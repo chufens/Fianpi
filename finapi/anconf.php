@@ -1,20 +1,22 @@
 <?php
+session_start();
+if(empty($_SESSION["usuario"]))
+	header ('Location: rastreo.php');
+	
 $time = microtime();
 $time = explode(' ', $time);
 $time = $time[1] + $time[0];
 $start = $time;
 
-session_start();
-if(empty($_SESSION["usuario"]))
-	header ('Location: rastreo.php');
+ini_set('track_errors', 1);
 
-	//print_r($_COOKIE);
-	$enviado = $_COOKIE['enviado'];
-	$nombre_array = unserialize ($_COOKIE["nombre"]);
-	$alias_array = unserialize ($_COOKIE["alias"]);
-	$ip_array = unserialize ($_COOKIE["ip"]);	
-	$cuantos = count($nombre_array);
+$enviado = $_COOKIE['enviado'];
+$nombre_array = unserialize ($_COOKIE["nombre"]);
+$alias_array = unserialize ($_COOKIE["alias"]);
+$ip_array = unserialize ($_COOKIE["ip"]);	
+$cuantos = count($nombre_array);
 ?>
+
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -30,18 +32,19 @@ $(window).load(function() {
 </script>
 </head>
 <body  id="contenedorweb" class="texto">
-<?php
-ini_set('track_errors', 1);
-include 'header.php';
 
-include_once 'includes/class/linea.php';
-include_once 'includes/class/archivo.php';
+<?php
+include 'header.php';
 ?>
 
 <div><a href="rastreo.php" title="Inicio" target="_self">Inicio</a> >>  <a href="rastreo.php" title="Rastreo" target="_self">Rastreo</a> >> <a href="resultados.php" title="Resultados" target="_self">Resultados</a> >> Resultado de la Exportación
 </div>
 <div>
+
 <?php
+	include_once 'includes/class/linea.php';
+	include_once 'includes/class/archivo.php';
+
 	$linea1 = new Lineacsv();
 	$file = fopen("includes/archives/nconf.csv", "w");
 	if (!$file) {
@@ -80,6 +83,7 @@ $total_time = round(($finish - $start), 4);
 echo '<span class="texto">Exportación realizada en '.$total_time.' segundos.</span>';
 echo "</td></tr></table></div>";	
 ?>
+
 </div>
 </body>
 </html>

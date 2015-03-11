@@ -12,6 +12,7 @@
 <?php
 include 'header.php';
 ?>
+
 <div>Inicio</div>
 
 <div align="left"><h1>Bienvenidos a FiNaPi</h1></div>
