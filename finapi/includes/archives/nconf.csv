@@ -1,2 +1,0 @@
-host_name;alias;address;os;check_period;notification_period;contact_groups;parents;host-preset;monitored_by
-;;;;24x7;24x7;;;;"Default Nagios"
